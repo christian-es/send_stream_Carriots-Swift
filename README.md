@@ -11,8 +11,8 @@ Class to send stream to Carriots for IoT projects using language Swift
     
     let carriots = Carriots(api_key: apikey, device: device)
     
-    var data: Dictionary<String, String> = ["":""]
+    var data: Dictionary<String, AnyObject>
     
-    data = ["clave1":"valor1", "clave2":"valor2", "clave3":"valor3"]
+    data = ["clave1":"valor1", "clave2":["subvalor" : 1], "clave3":"valor3"]
     
     carriots.send_stream(data)

@@ -1,6 +1,5 @@
 //
 //  Carriots.swift
-//  demoFaro
 //
 //  Created by Christian on 5/11/15.
 //  Copyright © 2015 Christian Escalante Illanes. All rights reserved.
@@ -18,7 +17,7 @@ class Carriots {
         self.device = device
     }
     
-    func send_stream(payload: Dictionary<String, String>){
+    func send_stream(payload: Dictionary<String, AnyObject>){
         let url = NSURL(string: api_url)
         let request = NSMutableURLRequest(URL: url!)
         let session = NSURLSession.sharedSession()
